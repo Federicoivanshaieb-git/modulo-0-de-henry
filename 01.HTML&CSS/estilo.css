@@ -1,0 +1,131 @@
+:ROOT{
+    /*colores*/
+    --color-GENERAL-FUENTE:#222222;
+    --COLOR-GRIS-FUENTE:#676767;
+    --COLOR-AMARILLO:#FFFF00;
+    --COLOR-GRIS-NAV:#F1F1F1;
+
+    /*medidas*/
+    --maxwidth : 100%;
+    --fuente-small : 16px ;
+    --fuente-regular:  30px ;
+    --fuente-titulo: 90px;
+}
+/*navegador*/
+/*satoshi*/
+@font-face {
+    font-family: "Satoshi";
+    src: url(./assets/fonts/Satoshi_Complete/Fonts/TTF/Satoshi-Variable.ttf);
+}
+
+body{
+    font-family: "Poppins",sans-serif;
+    color: var(--color-GENERAL-FUENTE);
+    background: #ffffff;
+    max-width: var(--maxwidth);
+}
+main,header {
+    margin: 0 auto;
+}
+header{
+    background-color: var(--COLOR-GRIS-NAV);
+    height: 89px;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+
+}
+header img{
+    margin-top :31px;/*error1*/
+    margin-left: 65px;
+    width: 144.78px;
+    height: 27px;
+}
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 888px;
+    height: 33px;
+    padding: 0x;/*error2*/
+    margin-top: 26px;/*error2*/
+    margin-right: 69px;/*error2*/
+}
+nav ul{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+nav .items{
+    height: 33px;
+    text-decoration: none;
+    font-size: var(--fuente-small);
+    color: var(--color-GENERAL-FUENTE);
+    border-radius: 9px;
+    padding: 5px 16px;
+    font-weight: 500;/*error3*/
+    line-height: 30px;
+    transition: o,2s ease;
+}
+nav .items:hover,
+nav .items:focus{
+    background-color: var(--color-GENERAL-FUENTE); 
+    font-size: var(--fuente-small);
+    padding:4px 16px 5px 16px;/*error4*/
+    color: #FFFFFF;
+}
+
+
+/*main*/
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section #contenedorTexto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 258px;
+    margin-top: 108px;
+
+}
+section #contenedorTexto #seguridadPersonalizada{
+    background-color: var(--COLOR-GRIS-NAV);
+    border-radius: 23px;
+    padding: 15px 17px 15px 21px;
+    width: 324px;
+    text-align: center;
+    font-size: var(--fuente-small);
+    line-height: 16px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+section #contenedorTexto h1{
+    font-size: var(--fuente-titulo);
+    font-weight: 900;
+    line-height: 87px;
+    letter-spacing: -1%;
+    margin-bottom: 38px;
+    font-family: "Satoshi", serif;
+    display: flex;
+    flex-direction: column;
+}
+h1 #security{
+    background-color: var(--COLOR-AMARILLO);
+    border-radius: 418px;
+    padding: 8px 23px 23px 23px;
+    margin-top:20px ;
+}
+section #contenedorTexto #parrafo{
+    font-size: var(--fuente-regular);
+    font-size: 500;
+    font-family: "Satoshi";
+    color: var(--COLOR-GRIS-FUENTE);
+    max-width: 25vw;
+}
+section #contenedorImagen img{
+    margin-left: 56.45px;
+}
